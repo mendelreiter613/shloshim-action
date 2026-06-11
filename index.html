@@ -3,109 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vehachai Yiten El Libo</title>
-    <style>
-        /* Modern, clean reset */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        
-        body {
-            background-color: #fafafa;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-            min-height: 100vh;
-        }
-
-        .dashboard {
-            max-width: 500px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        /* Header Section */
-        .header {
-            text-align: center;
-            padding-bottom: 16px;
-            border-bottom: 2px solid #eaeaea;
-        }
-
-        .header h1 { font-size: 28px; font-weight: 700; color: #111; margin-bottom: 8px; }
-        .header p { font-size: 16px; color: #666; line-height: 1.5; }
-
-        /* Pillar Sections (Emuna, Bitochon, Simcha) */
-        .section-title { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 12px; margin-top: 8px; }
-
-        .link-card {
-            display: block;
-            background: #fff;
-            padding: 16px 20px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #222;
-            font-weight: 500;
-            font-size: 16px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            border: 1px solid #eaeaea;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-bottom: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .link-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .link-card::after {
-            content: "→";
-            color: #999;
-            font-size: 18px;
-        }
-
-        /* Call to Action Section */
-        .cta-container { margin-top: 24px; }
-        
-        .mitzvah-button {
-            display: block;
-            width: 100%;
-            text-align: center;
-            background-color: #000;
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 18px 24px;
-            border-radius: 12px;
-            transition: opacity 0.2s;
-        }
-
-        .mitzvah-button:hover { opacity: 0.8; }
-    </style>
+    <title>Vehachai Yiten El Libo - Devorah Leah's Legacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="dashboard">
         
         <div class="header">
+            <img src="candle.png" alt="Memorial Candle" class="candle-img">
             <h1>Vehachai Yiten El Libo</h1>
-            <p>Carrying the inspiration forward in memory of Devorah Leah Reiter.</p>
+            <p class="translation">"And the living shall take it to heart"</p>
+        </div>
+
+        <div class="bio-section">
+            <img src="mother.jpg" alt="Devorah Leah Reiter" class="mother-img">
+            <h2>In Loving Memory</h2>
+            
+            <p class="bio-text">
+                When faced with a grueling cancer diagnosis, Devorah Leah Reiter made a profound choice: to walk her difficult journey with unshakeable <b>Emuna</b>, absolute <b>Bitochon</b>, and radiant <b>Simcha</b>. She famously taught that true joy isn't just about feeling happy; it is the deep realization that you are fulfilling Hashem's will in that exact moment. <i>"If I have to go to chemo today,"</i> she shared, <i>"I remind myself that this is what Hashem wants from me, and that brings me joy."</i>
+            </p>
+
+            <p class="bio-text">
+                Instead of turning inward during her tremendous pain, she turned outward. She made a promise to Hashem that if He gave her strength, she would give back. True to her word, she founded the <b>Circle of Kindness</b>, an organization that supports dozens of families across Long Island battling serious illnesses. Even while undergoing treatments, Devorah Leah spent countless hours mentoring patients, delivering Shabbat boxes, arranging prayer circles, and ensuring sick children received exactly what they needed to smile. 
+            </p>
+
+            <div class="pull-quote">
+                "I want everyone to know the importance of living life with joy. It isn't easy but it's the only way. Yes, daven and say tehillim that all pain and suffering should end and that we should feel and see the good! But it must be with joy! And when we contemplate that Hashem created us and knows what's truly best for us then it's easy to be joyful. Because it means life is perfect."
+            </div>
+            
+            <div class="legacy-text">
+                A soul never truly leaves this world; it continues to shine through the good deeds of those left behind. By taking upon a Mitzvah, we keep her legacy alive. Every action we do is a tremendous <i>zchus</i> for the <i>neshama</i> of <b>Devorah Leah bas Yafa Liba</b>, elevating her soul and bringing her light into our daily lives.
+            </div>
         </div>
 
         <div>
             <div class="section-title">Emuna (Faith)</div>
             <a href="https://www.chabad.org/library/article_cdo/aid/1398519/jewish/Emunah.htm" target="_blank" class="link-card">What is Emunah?</a>
-            <a href="https://www.chabad.org/library/article_cdo/aid/5802837/jewish/Faith-Emunah.htm" target="_blank" class="link-card">Faith is a Verb (Article)</a>
+            <a href="https://www.chabad.org/library/article_cdo/aid/5802837/jewish/Faith-Emunah.htm" target="_blank" class="link-card">Faith is a Verb</a>
         </div>
 
         <div>
             <div class="section-title">Bitochon (Trust)</div>
-            <a href="https://www.chabad.org/library/article_cdo/aid/1405289/jewish/Bitachon.htm" target="_blank" class="link-card">What is Bitachon? Real Confidence</a>
-            <a href="https://www.chabad.org/library/article_cdo/aid/2247/jewish/Bitachon.htm" target="_blank" class="link-card">A Deep Dive into Trusting G-d</a>
+            <a href="https://www.chabad.org/library/article_cdo/aid/1405289/jewish/Bitachon.htm" target="_blank" class="link-card">Real Confidence in G-d</a>
+            <a href="https://www.chabad.org/library/article_cdo/aid/2247/jewish/Bitachon.htm" target="_blank" class="link-card">A Deep Dive into Trust</a>
         </div>
 
         <div>

@@ -1,0 +1,185 @@
+/* Elegant, reset and base styles */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #Fcfbf9; /* Warm, elegant off-white */
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.dashboard {
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0dcd3;
+}
+
+.candle-img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.header h1 { 
+    font-family: 'Lora', serif; 
+    font-size: 32px; 
+    font-weight: 600; 
+    color: #1a1a1a; 
+    margin-bottom: 8px; 
+}
+
+.translation { 
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 16px; 
+    color: #666; 
+    letter-spacing: 0.5px;
+}
+
+/* Bio Section */
+.bio-section {
+    background: #ffffff;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    text-align: center;
+    border: 1px solid #f0eee9;
+}
+
+.mother-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #f7f5f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.bio-section h2 {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.bio-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.bio-text b {
+    color: #1a1a1a;
+}
+
+/* Beautiful pull quote styling */
+.pull-quote {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    margin: 24px 0;
+    border-top: 1px solid #f0eee9;
+    border-bottom: 1px solid #f0eee9;
+    background-color: #fcfbf9;
+    border-radius: 8px;
+}
+
+.legacy-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    text-align: left;
+    font-weight: 500;
+    background-color: #fbfaf8;
+    padding: 16px;
+    border-left: 3px solid #d4af37; /* Elegant gold accent */
+    border-radius: 0 8px 8px 0;
+    margin-top: 20px;
+}
+
+/* Pillar Sections */
+.section-title { 
+    font-family: 'Lora', serif;
+    font-size: 18px; 
+    font-weight: 600; 
+    color: #222; 
+    margin-bottom: 16px; 
+    margin-top: 8px; 
+    border-bottom: 1px solid #e0dcd3;
+    padding-bottom: 8px;
+}
+
+.link-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    border: 1px solid #f0eee9;
+    transition: all 0.2s ease;
+    margin-bottom: 12px;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    border-color: #e0dcd3;
+}
+
+.link-card::after {
+    content: "→";
+    color: #a09d96;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.link-card:hover::after {
+    transform: translateX(4px);
+}
+
+/* Call to Action Section */
+.cta-container { margin-top: 16px; margin-bottom: 40px; }
+
+.mitzvah-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 24px;
+    border-radius: 12px;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mitzvah-button:hover { 
+    background-color: #333333; 
+}
